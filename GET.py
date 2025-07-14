@@ -14,7 +14,7 @@ try:
     if response.status_code == 200:
         data = response.json()
         print("Drive Folders Retrieved Successfully:")
-        #print(data)
+        print(data)
         folders = data.get('data') or data.get('folders') or data
         if isinstance(folders, list):
             for folder in folders:
